@@ -23,7 +23,7 @@ export class omdbApi {
                         movie.load(raw_movie);
                         movies.push(movie);
                     });
-                    resolve();
+                    resolve(movies);
                 } catch (ex) {
                     console.log(ex);
                     reject();
